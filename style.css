@@ -1,0 +1,294 @@
+/* 
+Theme Name: Watchless
+Theme URI: 
+Description: Custom child theme for Underscores
+Author: Badr Al-Attiyat & Ayman AbuShaban
+Author URI: 
+Version: 1.0
+Template: _s-master
+*/
+
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+.container{
+	background: none repeat scroll 0 0 transparent;
+    margin: 0 auto;
+	width:960px;
+}
+#primary{
+	margin:auto;
+	padding: 0;
+    width: 750px;
+}
+#secondary{
+}
+#main{
+	overflow:auto;
+	padding-top:30px;
+}
+
+
+.site-branding{
+	margin:75px auto 0; 
+	padding:25px 0;
+	text-align:center; 
+}
+.site-branding h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+#site-navigation{
+	background-color:#444444;
+	line-height:30px;
+	min-height: 30px;
+	width:20%;
+
+}
+.main-navigation .menu {
+    display: block;
+    margin: 0 auto 0;
+    padding: 0;
+    text-align:center;
+    width:100%;
+}
+.main-navigation ul{
+	display:inline-block;
+	list-style: none;
+	margin: 0 auto;
+    padding-left: 0;
+    text-align: left;
+    width: auto;
+}
+.main-navigation li {
+	float: left;
+	padding:0 8px;
+	position: relative;
+}
+.main-navigation a {
+	color: #FFFFFF;
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-navigation a:hover, .current_page_ancestor a, .current_page_parent a, .current_page_item a{
+	color: #C3C3C3;
+}
+.main-navigation ul ul {
+	background-color:#444444;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	float: left;
+	position: absolute;
+		top: 30px;
+		left: 0;
+	z-index: 99999;
+}
+.main-navigation ul ul ul {
+	left: 100%;
+	top: 0;
+}
+.main-navigation ul ul a {
+    line-height: 100%;
+    padding: 10px;
+    text-align: left;
+    width: 200px;
+}
+.main-navigation ul ul li {
+}
+.main-navigation li:hover > a {
+	color: #C3C3C3;
+}
+.main-navigation ul ul :hover > a {
+}
+.main-navigation ul ul a:hover {
+}
+.main-navigation ul li:hover > ul {
+	display: block;
+}
+.main-navigation li.current_page_item a,
+.main-navigation li.current-menu-item a {
+}
+.menu-toggle {
+	display: none;
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+.nav-previous a, 
+.nav-next a,
+.page-numbers,
+a.page-numbers{
+	background-color: #444444;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Helvetica,sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    margin-bottom:6px;
+    padding: 3px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.post-navigation .nav-previous a:before{
+	content:'\2190 ';
+}
+.post-navigation .nav-next a:after{
+	content:' \2192';
+}
+.nav-previous a:hover, 
+.nav-next a:hover,
+.page-numbers:hover,
+a.page-numbers:hover,
+.page-numbers.current{
+	background-color:#AFB4BB;
+}
+span.meta-nav {
+    line-height: 120%;
+    padding: 0;
+    vertical-align: text-top;
+}
+.single #nav-below{
+	margin-top:40px;
+}
+
+
+
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+
+h1.section-title {
+    background-color: #31353A;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 100px;
+    padding: 0 25px;
+    text-align: center;
+    width: auto;
+}
+h1.entry-title, 
+h2.entry-title{
+	margin-bottom:0;
+}
+.entry-header {
+	text-align:center;
+}
+.entry-meta{
+	font-size:90%;
+	font-style:italic;	
+}
+.entry-meta a{
+	color:#7F7F7F;
+	text-decoration:none;
+}
+.entry-meta a:hover{
+	color: #212428;
+}
+.entry-meta sup{
+	bottom: 3px;
+    font-size: 9px;
+    padding-left: 1px;
+}
+
+.entry-footer {
+    background-color: transparent;
+    border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	color: #7F7F7F;
+    font-size: 90%;
+    font-style: italic;
+    margin: 25px 0;
+    padding: 12px;
+    text-align: center;
+    text-transform: lowercase;
+}
+.entry-footer a{
+	color: #7F7F7F;
+}
+.entry-footer a:hover{
+	color: #212428;
+}
+.postmeta, .sharing{
+	width:100%;
+}
+
+.search .entry-meta, .search .entry-footer{display:none;}
+.search .hentry{margin-bottom:25px;}
+
+.entry-attachment{
+	text-align:center;
+}
+
+.archive .page-header {
+    margin: 0 2.5% 50px 1.5%;
+}
+.archive h1.section-title{
+	margin-bottom:50px;
+}
+.archive .taxonomy-description{
+	text-align:center;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#colophon{
+	background-color:#444444;
+	color:#FFFFFF;	
+}
+#colophon a{
+	color:#C3C3C3;
+	text-decoration: none;
+}
+#colophon a:hover{
+	color:#919393;
+}
+#footer-widgets, .site-info {
+    clear: both;
+    margin: auto;
+}
+#footer-widgets {
+    height: auto;
+    margin-top: 30px;
+    overflow: hidden;
+    padding-top: 30px;
+    width: 100%;
+}
