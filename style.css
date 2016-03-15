@@ -12,7 +12,14 @@ Template: _s-master
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-
+h1 a:visited
+{
+	color: white;
+}
+a, a:visited
+{
+	color: #444444;
+}
 .container{
 	background: none repeat scroll 0 0 transparent;
     margin: 0 auto;
@@ -21,19 +28,42 @@ Template: _s-master
 #primary{
 	margin:auto;
 	padding: 0;
-    width: 750px;
+    width: 950px;
 }
+/* page template div */
 #secondary{
+	width: 950px;
+	margin: auto;
+	border-bottom: dotted 1px;
+
 }
 #main{
-	overflow:auto;
-	padding-top:30px;
+	padding-top:340px;
+
+
 }
 
 
 .site-branding{
-	display:none;
+	margin-top: 40px;
+	width: 100%;
+	position: absolute;
+	min-height: 350px;
+	text-align: center;
+	background-image: url(http://www.schaumburgwatch.com/images/moon/moonlandscape/slider-img1.jpg);
+	background-size: 100% 100%;
+
 }
+
+.site-branding  a{
+	font-size: 2em;
+	line-height: 5;
+	text-decoration: none;
+	border:solid 1px;
+	border-color: white;
+}
+
+
 
 
 /*--------------------------------------------------------------
@@ -98,6 +128,10 @@ Template: _s-master
     clear: both;
     margin: auto;
 }
+.site-info{
+	min-height: 299px;
+}
+
 #footer-widgets {
     height: auto;
     margin-top: 30px;
