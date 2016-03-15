@@ -40,7 +40,6 @@ Template: _s-master
 # Navigation
 --------------------------------------------------------------*/
 #site-navigation{
-	background-color:#444444;
 	line-height:30px;
 	min-height: 30px;
 	width:100%;
@@ -69,7 +68,7 @@ Template: _s-master
 	position: relative;
 }
 .main-navigation a {
-	color: #FFFFFF;
+	color: #444444;
     display: block;
     font-family: Helvetica, sans-serif;
     font-size: 1.1em;
