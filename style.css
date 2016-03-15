@@ -12,14 +12,7 @@ Template: _s-master
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-h1 a:visited
-{
-	color: white;
-}
-a, a:visited
-{
-	color: #444444;
-}
+
 .container{
 	background: none repeat scroll 0 0 transparent;
     margin: 0 auto;
@@ -32,13 +25,20 @@ a, a:visited
 }
 /* page template div */
 #secondary{
-	width: 950px;
+	width: 45%;
+	float: left;
+	text-align: left;
+	padding-left: 200px;
 	margin: auto;
-	border-bottom: dotted 1px;
 
+}
+#secondary h1 a{
+	text-decoration: none;
+	color: #444444;
 }
 #main{
 	padding-top:340px;
+	margin: auto;
 
 
 }
@@ -63,7 +63,13 @@ a, a:visited
 	border-color: white;
 }
 
-
+.content_right, .content_left{
+	float: left;
+	width: 45%;
+	}
+.content_left{
+	padding-right: 5%;
+	}
 
 
 /*--------------------------------------------------------------
@@ -96,16 +102,27 @@ a, a:visited
 	float: right;
 	padding:0 14px;
 	position: relative;
+	font-size: 1.1em;
+	font-family: 'Open Sans';
+
 }
-.main-navigation a {
+.main-navigation li a{
 	color: #444444;
-    display: block;
-    font-family: Helvetica, sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    letter-spacing: 0.6px;
-    text-decoration: none;
-    text-transform: uppercase;
+	text-transform: uppercase;
+}
+.main-navigation li a:hover{
+	background-color: #444444;
+	color: white;
+	padding-right: 5px;
+	padding-left: 5px;
+
+	
+}
+
+.site-title a{
+	color: white;
+	font-size: 4.1em;
+	font-family: Helvetica, sans-serif;
 }
 
 

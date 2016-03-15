@@ -1,11 +1,12 @@
 <?php 
 /*
-Template Name: Hometest
+Template Name: Gallery
 */ 
 ?>
 
 
 <?php 
+//BADR AL-ATTIYAT 1000143757 badr.al.attiyat@mail.utoronto.ca LAB 2
 get_header(); ?>
 
 <div id="content">
@@ -17,15 +18,28 @@ get_header(); ?>
 		//counter for the number of posts per page
 		$post_counter=0;
 	?>
-	<?php if(have_posts()) :
-		$counter = 0; $num_cols = 4; // set number of columns
-		while(have_posts()) : the_post(); ?>
-			<div class="post<?php if($counter%$num_cols == 0) echo 'clear'; ?>">
-<!-- all the html and other stuff to show post -->
-			</div>
-		<?php &counter++;
-		endwhile;
-	else : /*no post*/ endif; ?>
+	<?php 
+		//Add the counter as a condition in the while loop to stop retreiving posts after a certain number
+		if ( have_posts() ) : while ( have_posts() and $post_counter<=2 ): 
+			the_post();
+			$post_counter=$post_counter+1; 
+	?>
+	
+	<?php
+		//Display featured image of the post 
+		  
+	?>
+	<div id="secondary"> 
+	<h1>
+		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	</h1>
+		<?php 
+			//display the content of the post
+			the_content(); 
+		?>
+	</div>
+
+	<?php endwhile; else: endif; ?> 9
 </div>
 </div>
 
